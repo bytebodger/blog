@@ -1,2 +1,2 @@
 # blog
-Random thoughts that no one really gives a shit about
+These are the reasons why my beard is grey.
