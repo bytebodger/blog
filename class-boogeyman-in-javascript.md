@@ -58,7 +58,7 @@ Here's where, IMHO, all of the anti-`class` crusaders just miss the whole point.
     const myObject = {
        someProperty : 'foo',
        anotherProperty : 'bar',
-       printToConsole: (value) => console.log(value),
+       printToConsole : value => console.log(value),
     }
     console.log(myObject.someProperty);  // 'foo'
     console.log(myObject.anotherProperty);  // 'bar'
