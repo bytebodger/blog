@@ -114,7 +114,7 @@ So this means that if I'm a "full-stack developer" (and most of us who've been i
 
 ## Rising Above the Pedantry
 
-If you're still reading, and you're now convinced that this is a post about whether you should use leading- or trailing-spaces in your code... **STOP**!  That is *not* my point!  You see, I really couldn't care less how you choose to write your arrays/objects/results/etc.  If you write your objects with leading spaces like this:
+If you're still reading, and you're now convinced that this is a post about whether you should use leading- or trailing-commas in your code... **STOP**!  That is *not* my point!  You see, I really couldn't care less how you choose to write your arrays/objects/results/etc.  If you write your objects with leading commas like this:
 
     const myObject = {
        foo : 'bar'
@@ -125,7 +125,7 @@ If you're still reading, and you're now convinced that this is a post about whet
 
 Then... yay!  I applaud you!
 
-If you write your objects with trailing spaces like this:
+If you write your objects with trailing commas like this:
 
     const myObject = {
        foo : 'bar',
