@@ -136,7 +136,7 @@ If you write your objects with trailing commas like this:
 
 Then... yay!  I applaud you!
 
-If you prefer to write your objects on a single, whenever feasible, like this:
+If you prefer to write your objects on a single line, whenever feasible, like this:
 
     const myObject = {foo : 'bar', uno : 'dos', some : 'thing', another : 'element'};
 
