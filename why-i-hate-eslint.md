@@ -2,17 +2,19 @@
 
 I'm old enough to remember coding in the "bad old days".  I remember when a great portion of code was written in Notepad (not even Notepad++).  I remember when every aspect of coding "style" was a *suggestion*, or a "best practice".  As you can imagine, I've seen *a lot* of really ugly code.  For example, you don't need to explain to too many coders why the following snippet is ugly as hell:
 
-    let dogs = ['boxer','bloodhound','doberman'];
-    for (let i = 0; i < someLimit; i++) {
-    for (let j = 0; j < dogs.length; j++) {
-    let thisDog = dogs[j] + '(' + i + ')';
-    let stepsWalked = 0;
-    while (stepsWalked < 10) {
-    console.log(thisDog + ' has walked ' + stepsWalked + ' steps');
-    stepsWalked++;
-    }
-    }
-    }
+```javascript
+let dogs = ['boxer','bloodhound','doberman'];
+for (let i = 0; i < someLimit; i++) {
+for (let j = 0; j < dogs.length; j++) {
+let thisDog = dogs[j] + '(' + i + ')';
+let stepsWalked = 0;
+while (stepsWalked < 10) {
+console.log(thisDog + ' has walked ' + stepsWalked + ' steps');
+stepsWalked++;
+}
+}
+}
+```    
 
 It doesn't take a genius to see that there are "layers" to this snippet.  And the human eye is not easily prone to see those layers unless additional formatting clues are provided to future coders who are forced to troubleshoot it.  For this reason, one of the first things we are taught (by the Greatest Programming Instructor Ever Known - i.e., the internet), is that these different "layers" should be indented on their own level so as to make it easier for other coders to read the nested loops of logic.
 
@@ -68,30 +70,36 @@ You may be thinking,
 
 Many devs have acquired their individual coding "styles" as the result of years of hard-fought trial and error.  Some of these style choices were crafted from many past coding/troubleshooting mistakes.  So it's more-than-jarring when you come into a new dev team and you realize that aspects of your "style" will now cause the build to **fail**.  Consider this example:
 
-    const myObject = {
-       foo : 'bar'
-       ,uno : 'dos'
-       ,some : 'thing'
-       ,another : 'element'
-    };
+```javascript
+const myObject = {
+   foo : 'bar'
+   ,uno : 'dos'
+   ,some : 'thing'
+   ,another : 'element'
+};
+```    
 
 This is how I always used to write an array or an object that had a comma-separated list of values.  *You see what I did here?*  The comma that separates every property in the object is placed at the beginning of each new line - as opposed to the end.  I did this because, back in the "bad old days" of programming, the following code snippet *would not compile*:
 
-    const myObject = {
-       foo : 'bar',
-       uno : 'dos',
-       some : 'thing',
-       another : 'element',
-    };
+```javascript
+const myObject = {
+   foo : 'bar',
+   uno : 'dos',
+   some : 'thing',
+   another : 'element',
+};
+```
 
 It wouldn't compile because there's an "extra" comma after the last property in the object.  So if you wanted to keep the commas at the end of each line, but you still wanted to it to compile, you had to do it like this:
 
-    const myObject = {
-       foo : 'bar',
-       uno : 'dos',
-       some : 'thing',
-       another : 'element'
-    };
+```javascript
+const myObject = {
+   foo : 'bar',
+   uno : 'dos',
+   some : 'thing',
+   another : 'element'
+};
+```    
 
 In other words, you had to remember to avoid placing a comma after the last property in the object.  If you didn't, it wouldn't compile.  Of course, when you're troubleshooting, or adding new features, it's not uncommon that you have to add new properties to the end of this object.  So if you had all your commas at the end of each line, you first had to remember to add a comma to the *previous* line before creating your new property on the next line.  
 
@@ -101,12 +109,14 @@ To be perfectly clear, I fully realize that neither of these approaches (comma a
 
 Now, you may be thinking, "But modern languages now allow for the superfluous last-comma, placed after the last property in the column."  To which I'd say, "Sure.  Okay.  That's *mostly* correct.  But consider this example:"
 
-    SELECT
-       column1,
-       column2,
-       column3,
-    FROM
-       someTable
+```sql
+SELECT
+   column1,
+   column2,
+   column3,
+FROM
+   someTable
+```
 
 In many database engines, *this example still doesn't compile*.  Because many database engines still have not added support for that superfluous trailing comma in the result set.  And even if a given database engine adds such support, most tech stacks are far quicker to update their version of the programming language long before they think about updating their version of the database engine.
 
@@ -116,29 +126,35 @@ So this means that if I'm a "full-stack developer" (and most of us who've been i
 
 If you're still reading, and you're now convinced that this is a post about whether you should use leading- or trailing-commas in your code... **STOP**!  That is *not* my point!  You see, I really couldn't care less how you choose to write your arrays/objects/results/etc.  If you write your objects with leading commas like this:
 
-    const myObject = {
-       foo : 'bar'
-       ,uno : 'dos'
-       ,some : 'thing'
-       ,another : 'element'
-    };
+```javascript
+const myObject = {
+   foo : 'bar'
+   ,uno : 'dos'
+   ,some : 'thing'
+   ,another : 'element'
+};
+```
 
 Then... yay!  I applaud you!
 
 If you write your objects with trailing commas like this:
 
-    const myObject = {
-       foo : 'bar',
-       uno : 'dos',
-       some : 'thing',
-       another : 'element',
-    };
+```javascript
+const myObject = {
+   foo : 'bar',
+   uno : 'dos',
+   some : 'thing',
+   another : 'element',
+};
+```
 
 Then... yay!  I applaud you!
 
 If you prefer to write your objects on a single line, whenever feasible, like this:
 
-    const myObject = {foo : 'bar', uno : 'dos', some : 'thing', another : 'element'};
+```javascript
+const myObject = {foo : 'bar', uno : 'dos', some : 'thing', another : 'element'};
+```
 
 Then... yay!  I *still* applaud you!
 
@@ -180,31 +196,32 @@ The question you should be asking yourself is,
 
 If you think I'm being dogmatic about this, please consider the following example:
 
-    const legacyObject1= {
-       foo : 'bar',
-       uno : 'dos',
-       some : 'thing',
-       another : 'element',
-    };
-    const theNewObjectThatIveInserted = {
-       foo : 'bar'
-       ,uno : 'dos'
-       ,some : 'thing'
-       ,another : 'element'
-    };    
-    const legacyObject2 = {
-       foo : 'bar',
-       uno : 'dos',
-       some : 'thing',
-       another : 'element',
-    };
+```javascript
+const legacyObject1= {
+   foo : 'bar',
+   uno : 'dos',
+   some : 'thing',
+   another : 'element',
+};
+const theNewObjectThatIveInserted = {
+   foo : 'bar'
+   ,uno : 'dos'
+   ,some : 'thing'
+   ,another : 'element'
+};    
+const legacyObject2 = {
+   foo : 'bar',
+   uno : 'dos',
+   some : 'thing',
+   another : 'element',
+};
+```
 
 In this example, I can fully understand why someone might deem my newly-inserted object to be "wrong" (or at least - poor coding practice).  Because, in this example, there's legacy code that was following the trailing-comma standard, and I've gone right into the middle of it and inserted new code *that doesn't match the prevailing style in the file*.  
 
 In this example, I've created a bit of a logical incongruency inside a single code file by using mismatching styles.  In this scenario, I would fully understand if someone else (presumably, during code review), looked at this code and said, 
 
-> "Umm... you should really alter the style of your new object to match
-> the style of the other objects in the rest of the file."
+> "Umm... you should really alter the style of your new object to match the style of the other objects in the rest of the file."
 
 I *get* that.  There are many valid reasons for maintaining a consistent coding style *within a given code file*.  But if I'm writing an entirely new file of code, is it so blasphemous to think that this new file might have leading commas when other files in the codebase use trailing commas??
 
@@ -226,10 +243,7 @@ At the top of this post, I showed an example of aberrant "styling" (or, if you w
 
 So if you're ever perusing the ESLint file and you're wondering whether a rule should be set to `error` or `warn` (and I hope that, at some point, you *do* actually assess the linter's config file), you need to ask yourself, 
 
-> "Would a lack of compliance with this rule really degrade our team's
-> ability to swiftly debug/extend the functionality in a given code
-> file?  Or is it just something that should give the original developer
-> some pause before he/she submits the code?"
+> "Would a lack of compliance with this rule really degrade our team's ability to swiftly debug/extend the functionality in a given code file?  Or is it just something that should give the original developer some pause before he/she submits the code?"
 
 If it's the latter, then the rule should be set to `warn`, and not `error`.  Because you shouldn't be **failing builds** just because someone decided to add leading commas to their objects/arrays.
 
@@ -257,8 +271,7 @@ I was contracting for the largest health insurance provider in Jacksonville, Flo
 
 As you can probably guess, their existing codebase was a case study in contradictions.  Did they want leading-or-trailing commas in their objects/arrays?  Well... there were conflicting examples in the existing codebase.  Did they want methods/functions separated by blank lines?  Well... there were conflicting examples in the existing codebase.  In fact, for nearly any code-styling choice you might make, you could look at the legacy codebase and say, 
 
-> "Well... over *here*, they did it one way.  But over *there*, they did
-> it another."
+> "Well... over *here*, they did it one way.  But over *there*, they did it another."
 
 So what's a dev to do??  Well, I did the only thing that I *could* do.  I tried, as best I could, to "match" the legacy (non)standards.  Then, with my tests written and my code working properly in my local environment, I committed/pushed the branch, created a pull/merge request, and waited for the rest of the devs to either approve the request... or to pick apart what I'd written.
 
@@ -266,25 +279,33 @@ And, oh boy, did they have a fun time picking things apart.
 
 They didn't like the fact that I'd coalesced a variable into a `Boolean` with:
 
-    const someVar = !!comparedVar;
+```javascript
+const someVar = !!comparedVar;
+```
 
 They wanted me to instead use:
 
-    const someVar = Boolean(comparedVar);
+```javascript
+const someVar = Boolean(comparedVar);
+```
 
 *Even though*... there were examples in the legacy codebase where a double-bang had been used.
 
 They didn't like the fact that I'd used:
 
-    render() {
-       return (<SomeComponent style={{fontSize : '1.2em'}} />)
-    }
+```javascript
+render() {
+   return (<SomeComponent style={{fontSize : '1.2em'}} />)
+}
+```
 
 They wanted me to instead use:
 
-    render() {
-       return (<SomeComponent className={'someSingleUseCssClassThatWouldNeverBeLeveragedAnywhereElse'} />)
-    }
+```javascript
+render() {
+   return (<SomeComponent className={'someSingleUseCssClassThatWouldNeverBeLeveragedAnywhereElse'} />)
+}
+```
 
 *Even though*... there were examples in the legacy codebase where inline `style` attributes had already been added to existing React components.
 
@@ -310,11 +331,9 @@ So you see, in some respects, a linter can be your best friend.  It can serve as
 
 What I just wrote above may sound a bit... *combative*.  As though I'm just going to point to the linter rules and say, "Screw you, bro - it passed the linter, so I'm not changing it."  But that is not my intention at all.  There are many perfectly-valid reasons to "ding" someone's pull request, even if it "passed" the linter.  *Some* of those reasons (but certainly not *all* of them) include:
 
- 1. Errors in business logic:  Obviously, the linter won't catch most (or *any*) of the outright flaws in your logic.
- 2. Performance concerns:  It's easy for something to "pass" the linter - but still be written inefficiently.
- 3. Readability concerns:  The linter may be "satisfied" with your code - but it may still be downright confusing.  
- 4. Consistency within the code file:  If my code passed the linter, but it's inconsistent with the code directly above/below it *in the same file*, it's perfectly understandable that someone may ask me to change it.  But if my code is consistent with the rest of the code *in this particular file*, and it passes the linter, and you still want to "ding" me over some arbitrary code-styling concerns, then screw you.  I'm not changing it.
+ 1. **Errors in business logic**:  Obviously, the linter won't catch most (or *any*) of the outright flaws in your logic.
+ 2. **Performance concerns**:  It's easy for something to "pass" the linter - but still be written inefficiently.
+ 3. **Readability concerns**:  The linter may be "satisfied" with your code - but it may still be downright confusing.  
+ 4. **Consistency within the code file**:  If my code passed the linter, but it's inconsistent with the code directly above/below it *in the same file*, it's perfectly understandable that someone may ask me to change it.  But if my code is consistent with the rest of the code *in this particular file*, and it passes the linter, and you still want to "ding" me over some arbitrary code-styling concerns, then screw you.  I'm not changing it.
 
 So, in summary, the linter does not "shield" you from the valid concerns of other devs who may have spotted problems in your pull request.  But a rigorous linter can save you time when some pedantic idiot wants you to change your code simply because it doesn't comply with their "in-my-head" standard.
-
-
