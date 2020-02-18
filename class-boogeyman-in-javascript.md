@@ -72,18 +72,20 @@ console.log(myObject.printToConsole('foo bar'));  // 'foo bar'
 
 Or:
 
-    // Example B
-    class myClass {
-       someProperty = 'foo';
-       anotherProperty = 'bar';
-       function printToConsole(value) {
-          console.log(value);
-       }
-    }
-    const myObject = new myClass();
-    console.log(myObject.someProperty);  // 'foo'
-    console.log(myObject.anotherProperty);  // 'bar'
-    console.log(myObject.printToConsole('foo bar'));  // 'foo bar'    
+```javascript
+// Example B
+class myClass {
+   someProperty = 'foo';
+   anotherProperty = 'bar';
+   function printToConsole(value) {
+      console.log(value);
+   }
+}
+const myObject = new myClass();
+console.log(myObject.someProperty);  // 'foo'
+console.log(myObject.anotherProperty);  // 'bar'
+console.log(myObject.printToConsole('foo bar'));  // 'foo bar'    
+````
 
 Functionally speaking, what's the difference between A and B??  *Absolutely nothing.*  So here we have two different syntactic approaches to achieve *the exact same result*.  But some would have you believe that A is somehow... "good".  And B is somehow... ***evil***.  Hmm...
 
