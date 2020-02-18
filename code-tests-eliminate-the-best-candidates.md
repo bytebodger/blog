@@ -40,14 +40,16 @@ Does this mean that whiteboard interviews should be abandoned??  Of course not. 
 
  1. **Spend at least a modicum of time *training* your existing devs on how to ask effective interview questions.**  
 They may not *like* it.  But an untrained interviewer is often a liability.  Teach them to avoid leading questions.  Train them on how to assess the candidate's *mental process*, rather than focusing on semantic details.  Teach them how to make candidates (reasonably) comfortable - because nervousness is rarely a valid reason to eliminate a candidate.
- 3. **Have the coding exercises written down before the candidate(s) arrive.**  
+
+ 2. **Have the coding exercises written down before the candidate(s) arrive.**  
 You probably don't take kindly to oral-only instructions.  So don't expect your candidate to perform flawlessly with only oral instructions.
- 4. **Make every attempt to provide a workstation, with a pre-installed IDE upon which the candidates can demonstrate their solutions.**  
-No one codes in Notepad anymore.  And they don't code on whiteboards.  So don't use this handicap as an excuse to eliminate quality candidates.
- 5. **Encourage candidates to *talk* through their solutions.**  
+
+ 3. **Make every attempt to provide a workstation, with a pre-installed IDE upon which the candidates can demonstrate their solutions.**  No one codes in Notepad anymore.  And they don't code on whiteboards.  So don't use this handicap as an excuse to eliminate quality candidates.
+ 
+ 4. **Encourage candidates to *talk* through their solutions.**  
 Are you fixated on the idea that they can write perfectly-compilable code on a whiteboard that perfectly achieves the goal in an artificially constricted time frame?  Or are you more concerned that the candidate has a solid (and *repeatable*) mental process that can be used to code *any* potential solution??
 
- 6. **Encourage candidates to write *language-agnostic* solutions.**  
+ 5. **Encourage candidates to write *language-agnostic* solutions.**  
 In other words, it's usually effective to say, "Write this Function X... *in any language that you're comfortable in*."  Some people balk at such a liberty.  Some people insist that, "We're hiring for someone who will write in Assembly language, that will connect to a React frontend, and will communicate with a MongoDB via GraphQL - so we need to see the solution coded with those exact tools."  But such restrictions are an arrogant folly.  You shouldn't be looking for devs who happened to have mastered *your exact tech stack*.  You should be looking for hot-shot developers.  Period.  *If some dev has spent 20 years mastering every aspect of C#, and C++, and Python, and Oracle, do you really think he's incapable of (quickly) picking up the TypeScript that you're using in your current environment??*
 
 ## The Perils of Coding Tests
