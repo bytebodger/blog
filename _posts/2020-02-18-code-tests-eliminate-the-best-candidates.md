@@ -8,7 +8,7 @@ categories: code tests interviewing assessments whiteboarding hiring
 
 There's something beautiful (and potentially ugly) about the career fields associated with application development.  As a greybeard in the field, I've had the chance to see the beauty and the ugliness firsthand.  This dichotomy is centered upon the inherent quantifiablity of what we do.
 
-## The Dream of Quantifiability
+## The Dream of Quantifiability 
 
 On one hand, application development is somewhat unique amongst many other professional careers in that it's inherently *quantifiable*.  What I mean by this, is that you don't have to just take someone's word to assess their coding prowess.  When done properly, you can actually *see* whether candidates truly have the skills that they claim on their (infinitely malleable) resumes.  
 
