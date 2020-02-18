@@ -59,15 +59,15 @@ If you're a dev who's *confused* by the mere concept of classes, well... you mig
 Here's where, IMHO, all of the anti-`class` crusaders just miss the whole point.  In JavaScript, the `class` keyword... wait for it... doesn't actually *do* anything.  The introduction of `class` to the ECMA spec didn't add a single piece of new functionality.  All `class` "does" is it provides you with a shorthand way of doing *the exact same thing that you could always do in JavaScript from the beginning*.  Consider these two examples:
 
 ```javascript
-    // Example A
-    const myObject = {
-       someProperty : 'foo',
-       anotherProperty : 'bar',
-       printToConsole : value => console.log(value),
-    }
-    console.log(myObject.someProperty);  // 'foo'
-    console.log(myObject.anotherProperty);  // 'bar'
-    console.log(myObject.printToConsole('foo bar'));  // 'foo bar'
+// Example A
+const myObject = {
+   someProperty : 'foo',
+   anotherProperty : 'bar',
+   printToConsole : value => console.log(value),
+}
+console.log(myObject.someProperty);  // 'foo'
+console.log(myObject.anotherProperty);  // 'bar'
+console.log(myObject.printToConsole('foo bar'));  // 'foo bar'
 ```
 
 Or:
