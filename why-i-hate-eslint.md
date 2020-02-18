@@ -1,4 +1,4 @@
-# Why I Hate ESLint (and how I learned to love it)
+# Why I Hate ESLint (and How I Learned to Love It)
 
 I'm old enough to remember coding in the "bad old days".  I remember when a great portion of code was written in Notepad (not even Notepad++).  I remember when every aspect of coding "style" was a *suggestion*, or a "best practice".  As you can imagine, I've seen *a lot* of really ugly code.  For example, you don't need to explain to too many coders why the following snippet is ugly as hell:
 
