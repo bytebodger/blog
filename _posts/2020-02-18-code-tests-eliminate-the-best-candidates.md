@@ -2,7 +2,7 @@
 layout: post
 title:  "Your Coding Tests Are Probably Eliminating Some of Your Best Candidates"
 date:   2020-02-18 00:00:00 -0500
-categories: code tests interviews assessments whiteboarding
+categories: code tests interviewing assessments whiteboarding hiring
 ---
 # Your Coding Tests Are Probably Eliminating Some of Your Best Candidates
 
