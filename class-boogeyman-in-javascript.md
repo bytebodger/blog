@@ -6,10 +6,6 @@ I'm also old enough to remember when the programming world was dominated by deve
 
 Server-side scripting languages definitely did not qualify as "real" languages.  But even the guys writing in server-side scripting languages looked down their noses at the dweebs playing around with JavaScript.
 
-<div style="float:right; color:green;">
-   foo
-</div>
-
 ## A Tectonic Shift
 
 Obviously, the "heavyweight" OO languages, like Java and C#, are still massively used and their influence only continues to expand.  But it's pretty interesting to see how JavaScript has almost flipped the tables on the snobs who used to dismiss it as a worthless toy.  Nowadays, some of the juiciest job postings are for devs who can write most - or all - of an application entirely in JavaScript.  With tools like Node and Express and MongoDB, there's not even any need to confine your JS skills purely to the frontend.  
