@@ -118,15 +118,20 @@ So should we throw out all automated code tests?  Hardly.  They can be extremely
 
  1. **Don't choose a code-testing utility unless you can manually specify the time limits that are placed on each question.**  
 And be liberal with it.  Don't make blanket assumptions that "everyone" should be able to solve this question in X minutes.  A quality coder will sometimes invest extra time to ensure a robust, quality solution - and they shouldn't be punished for that.  And don't underestimate the discombobulating effect that can be placed on your candidates by watching that cold, unfeeling timer count down.
- 3. **Don't choose a code-testing utility unless you can manually choose *exactly* which questions are presented to the candidate.**  
+
+ 2. **Don't choose a code-testing utility unless you can manually choose *exactly* which questions are presented to the candidate.**  
 It's patently unfair to allow a random algorithm to assign questions A, B, & C *to me* - while questions X, Y, & Z are presented *to another candidate*.  The potential randomization of questions ruins any ability you have to make an apples-to-apples comparison between candidates.  Also, some of the "stock" questions provided by these code-testing utilities are worded in confusing-and-obtuse ways.  Your "test" shouldn't be whether the candidate can decipher the question's obtuse language.  The question should be testing someone's basic mastery of coding techniques.
- 5. **Be very careful with multiple choice questions.**  
+
+ 3. **Be very careful with multiple choice questions.**  
 If a complete novice can easily eliminate *any* of the potential answers, then the multiple choice question is poorly formed.
- 7. **Don't throw the coding test blindly at all candidates.**  
+
+ 4. **Don't throw the coding test blindly at all candidates.**  
 Quite frankly, it can be a little insulting for senior devs.  I understand that it may be a "blind" tool that you throw at any of the anonymous applicants who filter in through your web site or from the job boards.  But if one of your existing devs has highly recommended a friend with a wealth of knowledge and experience, you can completely turn off the candidate by sending them a basic-skills test.  You can "stick to your guns" if you want, and you can demand that *every* candidate - even those personally recommended by your own trusted employees - first completes the coding test.  But you'll also find that some of those senior, hot-shot devs simply can't be bothered.  They already have a good job.  They have side projects that they're working on.  They have... *options*.  And they don't need to jump through all your hoops just to be considered for a job that they might, at the conclusion of the process, not even want after all.
- 6. **Be respectful of your candidates' time.**  
+
+ 5. **Be respectful of your candidates' time.**  
 If you think that each coding task should take 30 minutes, and there are 10 tasks to complete, you're expecting a *lot* of unpaid labor from people you don't even know.  In such a scenario, who will have the wherewithal to complete the entire test?  The junior devs.  The ones without... *options*.  The ones who may need a lot of hand-holding if they manage to survive the interview process.  They don't have a good job.  They'll do anything you ask.  But the hot-shot coders?  They'll see your coding test for the time-drain that it is - and they'll just take a pass.
- 7. **Get your *existing* devs to take the test (if they didn't take it already as part of *their* interviewing process).**  
+
+ 6. **Get your *existing* devs to take the test (if they didn't take it already as part of *their* interviewing process).**  
 That's right.  They may already be hired - but it can be a fabulous benchmark to ask *your own* dev team to "eat its own dog food".  I'm not saying this because you should be looking to *remove* the members of your team that are (presumably) already thriving in your environment.  I'm saying this because it should give you a much more realistic perspective on exactly how *hard* - or maybe, how *easy* - your "standard" coding test is for prospective devs.  It could be a real eye-opener when you've been eliminating all those candidates who "only" scored 50% on your coding test - but your *existing devs* (the ones who are presumably doing good work for you already) are routinely scoring "only" 50% on the same test.
 
 ## The Perils of "Demo" Apps and Coding Exercises
@@ -151,8 +156,9 @@ Unfortunately, take-home coding exercises seem to be one of the most abused cudg
 
 Here is a very-literal example of a coding exercise that I was recently asked to complete just so I could *apply* to a given job:
 
-    You can choose any programming language and web development framework, database, and web server you like. 
-    The web application you need to build is a basic todo list application with the following requirements:
+    You can choose any programming language and web development framework, database, and 
+    web server you like. The web application you need to build is a basic todo list application 
+    with the following requirements:
     
     -   Users can view their todo lists.
     -   Users can add, remove, modify and delete todo entries.
@@ -175,12 +181,23 @@ Now you may be thinking,
 
 But let's break down the layers in this coding exercise:
 
- 1. **There are at least *two* CRUD layers** - one layer to CRUD the lists, and another layer to CRUD the individual todo items in each list.
- 2. **Each todo requires priority *and due date*** - and if you're doing dates with anything other than a modern datepicker, your app is gonna look pretty *janky*.  And as soon as you start throwing dates in there, it requires at least a slight complication in the sorting mechanisms. 
- 3. **You must be able to reorder the items *via drag-n-drop*.**  Umm... *WTF??*  To be clear, implementing drag-n-drop via React is no Herculean task.  But why is that a requirement *for a demo application*??  I mean, if some prospective dev isn't already familiar with the React drag-n-drop libraries, and he has to spend a bunch of time familiarizing himself with them, is that really what you want to use *as a selection criteria*?  
- 4. **You *must* use GraphQL.**  Now, I have nothing against GraphQL.  It's a fine tool.  But you're telling me that, if I had an amazing demo app already built that "only" used REST, *you're gonna eliminate me from contention*??  Lemme put this another way.  If you have a candidate who is basically a Programming God, *but*... for whatever reason, he hasn't yet used GraphQL, you don't at least want to talk to him a bit further to see if he *might* be a good match for your company/environment/team??  *C'mon, man...*
- 5. **You must have authentication services for both the app and the API.**  Can you *feel* my eyes rolling at this point?  Cuz they're *sooooo* rolling at this point.  You want me to build this demo app, with an implied data layer, and GraphQL (*not* REST!), and an authentication layer.  Umm... okay.
- 6. **And as a "complementary item", you should be able to create/register users or let them maintain state as a "guest".**  Now... read the rest of this spec.  Does that "throw in" suggestion really feel complementary to you?  I mean, sure, you could just ignore it.  After all, it's "complementary", *right*??  But if they're so fixated on the specific API format you're using, and if they're so fixated on drag-n-drop, do you really believe that they're gonna be satisfied with any submission that doesn't include the "complementary" aspects??
+ 1. **There are at least *two* CRUD layers**  
+One layer to CRUD the lists, and another layer to CRUD the individual todo items in each list.
+
+ 2. **Each todo requires priority *and due date***  
+And if you're doing dates with anything other than a modern datepicker, your app is gonna look pretty *janky*.  And as soon as you start throwing dates in there, it requires at least a slight complication in the sorting mechanisms. 
+
+ 3. **You must be able to reorder the items *via drag-n-drop*.**  
+Umm... *WTF??*  To be clear, implementing drag-n-drop via React is no Herculean task.  But why is that a requirement *for a demo application*??  I mean, if some prospective dev isn't already familiar with the React drag-n-drop libraries, and he has to spend a bunch of time familiarizing himself with them, is that really what you want to use *as a selection criteria*?  
+
+ 4. **You *must* use GraphQL.**  
+Now, I have nothing against GraphQL.  It's a fine tool.  But you're telling me that, if I had an amazing demo app already built that "only" used REST, *you're gonna eliminate me from contention*??  Lemme put this another way.  If you have a candidate who is basically a Programming God, *but*... for whatever reason, he hasn't yet used GraphQL, you don't at least want to talk to him a bit further to see if he *might* be a good match for your company/environment/team??  *C'mon, man...*
+
+ 5. **You must have authentication services for both the app and the API.**  
+Can you *feel* my eyes rolling at this point???  Cuz they're *sooooo* rolling at this point.  You want me to build this demo app, with an implied data layer, and GraphQL (*not* REST!), and an authentication layer?  Umm... okay.
+
+ 6. **And as a "complementary item", you should be able to create/register users or let them maintain state as a "guest".**  
+Now... read the rest of this spec.  Does that "throw in" suggestion really feel complementary to you?  I mean, sure, you could just ignore it.  After all, it's "complementary", *right*??  But if they're so fixated on the specific API format you're using, and if they're so fixated on drag-n-drop, do you really believe that they're gonna be satisfied with any submission that doesn't include the "complementary" aspects??
 
 But here's my favorite part of this inconsiderate request:
 
@@ -252,13 +269,19 @@ So... I personally *hate* coding assignments, and I believe they're always evil,
 
  1. **Coding assignments should almost *never* be a part of your initial screening process.**  
  Despite the (one) exception  shown above, if I see a job posting for something I *might* be interested in, but I must complete a coding assignment to even *submit* an application... I'm moving onward.  *Your* time is valuable.  *My* time is valuable.  And I'm not going to spend numerous hours (or days) trying to code up some uber-specific solution in the mere hopes that you'll talk to me.  There are plenty of script kiddies out there with marginal resumes who'd be happy to jump through all your hoops in the off chance that you'll move them along in the interview process.  I'm not that guy.  And most of the extremely-experienced, extremely-talented colleagues I know will refuse to jump through those hoops as well.
+
  2. **Get over yourself.**  
  Obviously, there are *some* companies out there that will put up such large barriers-to-entry as a hyper-specific coding assignment before they will even *consider* you.  Those companies have names like Amazon.  And Google.  And AirBnB.  They pay *handsomely*.  They have tremendous *clout* in the developer community.  They get *thousands* of applicants every year.  They can easily afford to be so choosy.  Chances are, if you're reading this, you are *not* with one of those companies.  You probably believe that your early-stage, venture capital, startup is The Next Unicorn.  But the most talented devs out there have been around the block a few times.  And they know better than to burn their nights and weekends meeting all the nitpicky requirements of your demo app.
+
  3. **Convert your coding assignment into *live* sessions.**  
  Do a screenshare with the qualified applicants that you've already identified, give them an open-ended coding assignment, and ask them to code it in front of you.  Yes... this will require more *time* on your part.  Time that will yield *far better devs*.  There's literally no limit to the scope you can ask for.  You can ask them to, from scratch, recreate Facebook.  Will they finish it during your screenshare?  Of course not.  What's important is that you will see, in real-time, how they go about the process of building-and-architecting an application.  And what if they don't choose to use the exact tools that exist in your chosen tech stack?  Who the hell cares??  Don't get bogged down in the specifics of your particular tech/alphabet soup.
+
  4. **Set a hard limit on the live, screenshared, coding assignment.**  
  I personally recommend two hours.  Tell the candidates, upfront, that they won't necessarily be expected to complete the assignment and that they won't be asked to code any longer than the previously-communicated time limit.  If you can't tell, after two hours of watching someone live-code a potential application, whether or not you'd like to hire them, then forcing them to spend 10 more hours of their own time won't answer the question for you.  And when you approach coding assignments in this way, it communicates to your next potential Coding Rock Star that you actually have some respect for their time and their talents - and that if they were to accept a job offer from you, they can expect the same respect once they're officially onboard.
+
  5. **Do NOT abandon *anyone* who submitted an assignment.**  
  This one is *huge*.  If someone has agreed to do all that free work just for the purpose of (hopefully) demonstrating their worth, the most disrespectful thing you can possibly do is to simply ignore them.  Every single submitted exercise deserves at least *some* level of earnest feedback on *your* part.  If you think you can't possibly fulfill such a requirement, then **stop soliciting code assignments**.  *Seriously*.  Stop it.  *Right.* ***Now***.  Think about it like this:  Imagine agreeing to work *for free* for someone, for an entire day, in the hopes that they'll extend you a formal job offer.  Then, at the end of the day, not only have you not received an offer, but no one in the company will even *talk* to you.  They've disappeared.  If you did anything "wrong", or even just "suboptimal", there's no way to know it, because the jerks who agreed to let you work for free for the day can't be bothered to give you *any* meaningful feedback.  They just got in their cars and went home and left it to you to find your own way out.  That's what it's like when you pass out all these take-home coding assignments - and then you don't bother to give any thoughtful response to the submitted effort.  It's a ridiculous slap in the face.
+
  6. **Throw out your tech stack.**  
  If you have a React shop, but someone can wow you with their ability to code up an amazing application in Angular, should that really count against them??  Do you really want to eliminate someone who's a Coding Rock Star - but doesn't happen to have specific experience in your narrowly-defined tech stack?? Think about that for awhile...
+
