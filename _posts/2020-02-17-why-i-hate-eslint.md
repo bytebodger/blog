@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why I Hate ESLint - and How I Learned to Love It"
+title:  "Why I Hate ESLint (and How I Learned to Love It)"
 date:   2020-02-17 00:00:00 -0500
 categories: eslint linting airbnb standardization javascript
 ---
