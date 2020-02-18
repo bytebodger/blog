@@ -44,7 +44,8 @@ They may not *like* it.  But an untrained interviewer is often a liability.  Tea
  2. **Have the coding exercises written down before the candidate(s) arrive.**  
 You probably don't take kindly to oral-only instructions.  So don't expect your candidate to perform flawlessly with only oral instructions.
 
- 3. **Make every attempt to provide a workstation, with a pre-installed IDE upon which the candidates can demonstrate their solutions.**  No one codes in Notepad anymore.  And they don't code on whiteboards.  So don't use this handicap as an excuse to eliminate quality candidates.
+ 3. **Make every attempt to provide a workstation, with a pre-installed IDE upon which the candidates can demonstrate their solutions.**  
+ No one codes in Notepad anymore.  And they don't code on whiteboards.  So don't use this handicap as an excuse to eliminate quality candidates.
  
  4. **Encourage candidates to *talk* through their solutions.**  
 Are you fixated on the idea that they can write perfectly-compilable code on a whiteboard that perfectly achieves the goal in an artificially constricted time frame?  Or are you more concerned that the candidate has a solid (and *repeatable*) mental process that can be used to code *any* potential solution??
