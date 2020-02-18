@@ -147,7 +147,8 @@ Unfortunately, take-home coding exercises seem to be one of the most abused cudg
 
 Here is a very-literal example of a coding exercise that I was recently asked to complete just so I could *apply* to a given job:
 
-    You can choose any programming language and web development framework, database, and web server you like. The web application you need to build is a basic todo list application with the following requirements:
+    You can choose any programming language and web development framework, database, and web server you like. 
+    The web application you need to build is a basic todo list application with the following requirements:
     
     -   Users can view their todo lists.
     -   Users can add, remove, modify and delete todo entries.
