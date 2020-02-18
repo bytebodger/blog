@@ -232,7 +232,7 @@ But despite this privilege, I actually completed this coding assignment.  For a 
 
 For a while, I heard absolutely nothing.  In fact, I don't believe that, under "normal" circumstances, I ever would have heard *anything* from the potential employer.  (Which is, quite frankly, downright rude.)  But through a few odd coincidences, I ended up talking with someone who knew the CEO of the company requesting the coding assignment.  Here's what they told me,
 
-> "They didn't really like my submission because I coded the backend in PHP."
+> "They didn't really like your submission because you coded the backend in PHP."
 
 Now, I implore you, please scroll up and look through those requirements again.  And please point out - *anywhere* in the requirements - where it said which language should/must be used for the backend?  To be absolutely clear, my solution had a React frontend that used GraphQL to submit its queries to the API.  The API (yes... written in PHP) was also designed to accept-and-process queries specifically submitted in the GraphQL format.  The persistence layer was handled through MySQL.  (Again, the specs said nothing about exactly which data engine should be used.)  The frontend utilized drag-n-drop to allow for visual sorting of todo items.  
 
