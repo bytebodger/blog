@@ -2,7 +2,7 @@
 layout: post
 title:  "Your Coding Tests Are Probably Eliminating Some of Your Best Candidates"
 date:   2020-02-18 00:00:00 -0500
-categories: jekyll update
+categories: code tests, interviews, assessments, whiteboarding
 ---
 # Your Coding Tests Are Probably Eliminating Some of Your Best Candidates
 
