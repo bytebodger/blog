@@ -4,8 +4,6 @@ title:  "Your Coding Tests Are Probably Eliminating Some of Your Best Candidates
 date:   2020-02-18 00:00:00 -0500
 categories: code tests interviewing assessments whiteboarding hiring
 ---
-# Your Coding Tests Are Probably Eliminating Some of Your Best Candidates
-
 There's something beautiful (and potentially ugly) about the career fields associated with application development.  As a greybeard in the field, I've had the chance to see the beauty and the ugliness firsthand.  This dichotomy is centered upon the inherent quantifiablity of what we do.
 
 ## The Dream of Quantifiability 
