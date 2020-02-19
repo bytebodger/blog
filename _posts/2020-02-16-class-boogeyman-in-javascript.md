@@ -123,7 +123,7 @@ What's the difference between these two code snippets?
 
 ```javascript
 // Example A
-const myfunction = function() {
+const myFunction = function() {
    console.log('it ran');
 }
 console.log(myFunction());  // 'it ran'
