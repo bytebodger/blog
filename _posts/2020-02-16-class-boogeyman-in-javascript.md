@@ -126,7 +126,7 @@ What's the difference between these two code snippets?
 const myFunction = function() {
    console.log('it ran');
 }
-console.log(myFunction());  // 'it ran'
+myFunction();  // 'it ran'
 ```    
     
 Or:
@@ -134,7 +134,7 @@ Or:
 ```javascript
 // Example B
 const myFunction = () => console.log('it ran');
-console.log(myFunction());  // 'it ran'
+myFunction();  // 'it ran'
 ```    
 
 Obviously, there is no functional difference.  *They do the exact same thing.*  You see, arrow functions are nothing more than syntactic sugar.  They allow you to do the exact same thing that you were always doing in JavaScript, in a slightly different syntax.  Yes... an arrow function is generally seen to be "cleaner".  But there's nothing *wrong* about declaring your functions in the old-school format.
