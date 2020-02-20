@@ -15,4 +15,6 @@ Back in these "bad ol' days", most of the shared-hosting providers gave you only
 
 So... with the help of virtualization, PHP became possibly the first programming language that was readily offered _to the masses_ to create dynamic web pages.  Because once virtualization gained a solid foothold, a lotta folks who were signing up for their first virtual hosting environment found that the "server" came preinstalled with PHP (and the embyronic beginnings of MySQL).  
 
-Now I understand that if we are to adhere strictly to literal timelines, Perl preceeded PHP - by a good bit.  But I would stridently argue that PHP was the first "truly-internet" language that fostered widespread adoption of dynamic HTML.  To put it another way:  The first "script kiddies" didn't cut their teeth on Perl.  They got their feet wet in PHP.
+Now I understand that if we're to adhere strictly to literal timelines, Perl preceeded PHP - by a good bit.  But I would stridently argue that PHP was the first "truly-internet" language that fostered widespread adoption of dynamic HTML.  To put it another way:  The first "script kiddies" didn't cut their teeth on Perl.  They got their feet wet in PHP.
+
+So I dove in.  _Somehow_... I made it work.  I wrote a _crap-ton_ of thoroughly-embarrasing code.  But somehow, some way, I managed to make it all "work" at the time.
