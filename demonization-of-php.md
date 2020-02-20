@@ -18,3 +18,9 @@ So... with the help of virtualization, PHP became possibly the first programming
 Now I understand that if we're to adhere strictly to literal timelines, Perl preceeded PHP - by a good bit.  But I would stridently argue that PHP was the first "truly-internet" language that fostered widespread adoption of dynamic HTML.  To put it another way:  The first "script kiddies" didn't cut their teeth on Perl.  They got their feet wet in PHP.
 
 So I dove in.  _Somehow_... I made it work.  I wrote a _crap-ton_ of thoroughly-embarrasing code.  But somehow, some way, I managed to make it all "work" at the time.
+
+## Evolving Past PHP
+
+Of course, the interwebs are constantly evolving.  And as they did, PHP became more of an embarrassing side-note for any of the "real" programmers.  We got JSP (which is, honestly, a complete shit-storm in its own right).  We got JavaScript - but back then, JavaScript couldn't really _do_ anything useful.  We got other server-side scripting tools, like (the forever-dying language of) ColdFusion.  Eventually, we even advanced to the point where we could write "real" enterprise-level apps, first in Java - then in C# - that would make the haughty OOP crowd nod in approval.  But along the way, a _funny_ thing happened.  PHP never really went _away_.  It just kinda lingered in the amateurish shadows - refusing to die, but refusing to properly evolve.
+
+
