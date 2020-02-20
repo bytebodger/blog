@@ -30,3 +30,15 @@ We've all seen the web statistics to back it up.  At any given time, there's an 
 ## Personal Evolution
 
 Given my (long, greybeard) history, you can probably guess that _I too_ have "evolved" beyond PHP.  I moved to ColdFusion/MS-SQL, then to Java/Oracle, then to ASP/C#, then to jQuery/Knockout/Angular/React.  Like most people who are in the "long game" of app-dev, I've managed to get my grimy fingers into a stunning array of technologies - even if I'm still struggling to master _any_ of them.  
+
+But I never really _quit_ PHP.  It's been installed on my local machines for decades.  I've rarely ever been _paid_ to write PHP - because, let's face it, most of the PHP jobs out there just don't pay.  (Do I want to be your WordPress Administrator for $50k/year??  Umm... no.)  But it's been an invaluable tool for those (many) times when I want to write some quick coding utility at home.  Even as I've moved ever deeper into frontend development, I find myself often reaching for PHP because it's a quick-and-easy way to spin up a backend API.
+
+## The Shaming of PHP
+
+Even though I still write some PHP in my spare time, I've known for a _loooong_ time that being a PHP dev is usually best kept as a type of "dirty little secret".  You can do PHP, but you should only do it when you're at home.  Alone.  With all the blinds closed.  And for godsake, no matter what you do, never _tell_ anyone that you actually write (and - egads! - _enjoy_) PHP.  It's like the fetish porn of software development.  There are plenty of people out there doing it, but if you wanna be accepted and respected by the "real" developers out there, you'd best keep that shit to yourself.
+
+This point was driven home to me recently during two incidents when I was involved in a job search.  
+
+1. I was interviewing for a React position and I was doing a screensharing coding test with two of the company's senior devs observing my actions.  When they gave me the instructions, I launched my IDE - JetBrains' PHPStorm.  One of their devs immediately exclaimed, "_PHP_ Storm???"  He sounded like I'd just proposed scrawling the answers to their coding test directly on my monitors - in feces.<br/><br/>His exclamaition was quite silly.  I wasn't going to _write_ and of the answers to their coding test in PHP.  I wasn't going to _run_ any of my completed code in PHP.  I was only using an IDE that had "PHP" _in the name_.  And this was enough to give this guy the creeps.
+
+If this sounds like some whiny defense of the language, believe me, it's not.  
